@@ -1,0 +1,9 @@
+Azericard:
+  - Ümumi məlumat: "integrations/azericard/about.md"
+  - API Referansı:
+      - API Klient: "integrations/azericard/api-reference/client.md"
+      - Schemas:
+        - Response: "integrations/azericard/api-reference/response.md"
+        - Callback: "integrations/azericard/api-reference/callback.md"
+        - Common: "integrations/azericard/api-reference/common-schemas.md"
+        - Helpers: "integrations/azericard/api-reference/helper-functions.md"
