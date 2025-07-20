@@ -77,16 +77,16 @@ AzeriCardClientClass interfeysinin dilini dəyişmək istəyirsinizsə, `AZERICA
 
 ### Sorğular listi
 
-| Sorğu metodu                                                                                       | Məqsəd                                               |                      Azericard API                       |
-| :------------------------------------------------------------------------------------------------- | :--------------------------------------------------- | :------------------------------------------------------: |
-| [`authorization`][integrify.azericard.client.AzeriCardClientClass.authorization]                   | Ödəniş/Bloklama                                      | `https://mpi.3dsecure.az/cgi-bin/cgi_link (TRTYPE='1')`  |
-| [`auth_and_save_card`][integrify.azericard.client.AzeriCardClientClass.auth_and_save_card]         | Ödəniş/Bloklama və kartı yadda saxlamaq              | `https://mpi.3dsecure.az/cgi-bin/cgi_link (TRTYPE='1')`  |
-| [`auth_with_saved_card`][integrify.azericard.client.AzeriCardClientClass.auth_with_saved_card]     | Saxlanılan kartla ödəniş/bloklama                    | `https://mpi.3dsecure.az/cgi-bin/cgi_link (TRTYPE='1')`  |
-| [`finalize`][integrify.azericard.client.AzeriCardClientClass.finalize]                             | Blok olunmuş məbləği qəbul ETMƏMƏK (offline) sorğusu | `https://mpi.3dsecure.az/cgi-bin/cgi_link (TRTYPE='24')` |
-| [`get_transaction_status`][integrify.azericard.client.AzeriCardClientClass.get_transaction_status] | Ödəniş statusunun yoxlanılması                       | `https://mpi.3dsecure.az/cgi-bin/cgi_link (TRTYPE='90')` |
-| [`transfer_start`][integrify.azericard.client.AzeriCardClientClass.transfer_start]                 | Müştəriyə pul köçürülmə prosesinin başladılması      |         `https://mt.azericard.com/payment/view`          |
-| [`transfer_confirm`][integrify.azericard.client.AzeriCardClientClass.transfer_confirm]             | Müştəriyə pul köçürülmə prosesini təsdiqləmə         |          `https://mt.azericard.com/api/confirm`          |
-| [`transfer_decline`][integrify.azericard.client.AzeriCardClientClass.transfer_decline]             | Müştəriyə pul köçürülmə prosesini imtina etmə        |          `https://mt.azericard.com/api/decline`          |
+| Sorğu metodu             | Məqsəd                                               |                      Azericard API                       |
+| :----------------------- | :--------------------------------------------------- | :------------------------------------------------------: |
+| `authorization`          | Ödəniş/Bloklama                                      | `https://mpi.3dsecure.az/cgi-bin/cgi_link (TRTYPE='1')`  |
+| `auth_and_save_card`     | Ödəniş/Bloklama və kartı yadda saxlamaq              | `https://mpi.3dsecure.az/cgi-bin/cgi_link (TRTYPE='1')`  |
+| `auth_with_saved_card`   | Saxlanılan kartla ödəniş/bloklama                    | `https://mpi.3dsecure.az/cgi-bin/cgi_link (TRTYPE='1')`  |
+| `finalize`               | Blok olunmuş məbləği qəbul ETMƏMƏK (offline) sorğusu | `https://mpi.3dsecure.az/cgi-bin/cgi_link (TRTYPE='24')` |
+| `get_transaction_status` | Ödəniş statusunun yoxlanılması                       | `https://mpi.3dsecure.az/cgi-bin/cgi_link (TRTYPE='90')` |
+| `transfer_start`         | Müştəriyə pul köçürülmə prosesinin başladılması      |         `https://mt.azericard.com/payment/view`          |
+| `transfer_confirm`       | Müştəriyə pul köçürülmə prosesini təsdiqləmə         |          `https://mt.azericard.com/api/confirm`          |
+| `transfer_decline`       | Müştəriyə pul köçürülmə prosesini imtina etmə        |          `https://mt.azericard.com/api/decline`          |
 
 ### Sorğu göndərmək axını
 
