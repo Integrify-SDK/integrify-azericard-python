@@ -43,10 +43,17 @@ Repository = "https://github.com/ntegrify-SDK/integrify-azericard-python"
 Documentation = "https://integrify.mmzeynalli.dev/integrations/azericard/about"
 
 [dependency-groups]
+gh = [
+    "pytest>=8.1.1,<9",
+    "pytest-mock>=3.14.0,<4",
+    "time-machine>=2.16.0",
+    "smokeshow>=0.4.0,<0.5",
+    "coverage>=7.6.3,<8",
+    "duty>=1.5.0",
+]
 dev = [
     "pytest>=8.1.1,<9",
     "pytest-mock>=3.14.0,<4",
-    "smokeshow>=0.4.0,<0.5",
     "mypy>=1.9.0,<2",
     "ruff>=0.3.5,<0.4",
     "pre-commit>=3.8.0,<4",
@@ -65,7 +72,7 @@ docs = [
 ]
 
 [tool.uv]
-default-groups = ["dev", "docs"]
+default-groups = ["gh", "dev", "docs"]
 
 [tool.hatch.build.targets.sdist]
 include = ["src/integrify"]
