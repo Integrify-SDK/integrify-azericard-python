@@ -135,7 +135,7 @@ class TransferDeclineResponseSchema(BaseModel):
             source += str(val)
 
         with open(env.AZERICARD_KEY_FILE_PATH, encoding='utf-8') as key_file:
-            key = key_file.read()
+            key = key_file.read().strip().replace('\r\n', '\n')
 
         source += key
 
