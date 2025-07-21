@@ -31,7 +31,7 @@ AZERICARD_CALLBACK_URL = os.getenv('AZERICARD_CALLBACK_URL', None)
 AZERICARD_INTERFACE_LANG = os.getenv('AZERICARD_INTERFACE_LANG', 'az')
 """Dil seçimi (default: az)"""
 
-if not AZERICARD_KEY_FILE_PATH:
+if not AZERICARD_KEY_FILE_PATH:  # pragma: no cover
     warn('AZERICARD_KEY_FILE_PATH mühit dəyişənlərinə dəyər verməsəniz sorğular çalışmayacaq!')
 
 

@@ -84,3 +84,30 @@ def test_signature_verification(amount, exception):
                 'Signature': 'bf46acdb8fe9ecc6ba784a3427de88d1',
             }
         ).model_dump()
+
+
+@pytest.mark.parametrize(
+    'expected_signature,exception',
+    [
+        ('757983078a9a4f5197686311ce5fc4a2', does_not_raise()),
+        ('757983078a9a4f5197686311ce5fc4a3', pytest.raises(ValidationError)),
+    ],
+)
+def test_transfer_signature_verification(expected_signature, exception):
+    from integrify.azericard.schemas.enums import TransferStatusCode
+    from integrify.azericard.schemas.response import TransferDeclineResponseSchema
+
+    with exception:
+        TransferDeclineResponseSchema.model_validate(
+            {
+                'OperationId': '1234567890123456',
+                'SRN': '1234567890',
+                'Amount': 1,
+                'Cur': 'AZN',
+                'Status': 'pending',
+                'timestamp': '20250403020100',
+                'ResponseCode': TransferStatusCode.SUCCESS,
+                'Message': 'Success',
+                'Signature': expected_signature,
+            }
+        )

@@ -72,4 +72,6 @@ class TransferConfirmPayloadHandler(APIPayloadHandler):
 
 class TransferDeclinePayloadHandler(APIPayloadHandler):
     def __init__(self):
-        super().__init__(TransferConfirmDeclineRequestSchema, TransferDeclineResponseSchema)
+        super().__init__(
+            TransferConfirmDeclineRequestSchema, TransferDeclineResponseSchema
+        )  # pragma: no cover
