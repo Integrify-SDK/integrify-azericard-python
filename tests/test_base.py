@@ -17,7 +17,7 @@ if TYPE_CHECKING:
 def test_psign_generation(azericard_client: 'AzeriCardClientClass', mocker: MockerFixture):
     from integrify.azericard.schemas.enums import AuthorizationType
 
-    with mocker.patch('random.getrandbits', return_value=0xFFEEDDCCBBAA99887766554433221100):
+    with mocker.patch('secrets.token_hex', return_value='FFEEDDCCBBAA99887766554433221100'):
         req = azericard_client.authorization(
             1,  # amount
             'AZN',  # currency
