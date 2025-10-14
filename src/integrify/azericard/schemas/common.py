@@ -1,4 +1,4 @@
-import random
+import secrets
 from decimal import Decimal
 from typing import Union
 
@@ -30,7 +30,7 @@ class AzeriCardMinimalDataSchema(BaseModel):
     """GMT-də e-ticarət şlüzünün vaxt damğası: YYYYMMDDHHMMSS"""
 
     nonce: str = Field(
-        default_factory=lambda: f'{random.getrandbits(128):0>16X}',
+        default_factory=lambda: secrets.token_hex(16),
         min_length=8,
         max_length=32,
     )

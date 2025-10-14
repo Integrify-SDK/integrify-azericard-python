@@ -1,5 +1,5 @@
 version = 1
-requires-python = ">=3.9, <4"
+requires-python = ">=3.9"
 resolution-markers = [
     "python_full_version >= '3.12'",
     "python_full_version == '3.11.*'",
@@ -532,26 +532,26 @@ wheels = [
 
 [[package]]
 name = "griffe"
-version = "1.7.3"
+version = "1.14.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a9/3e/5aa9a61f7c3c47b0b52a1d930302992229d191bf4bc76447b324b731510a/griffe-1.7.3.tar.gz", hash = "sha256:52ee893c6a3a968b639ace8015bec9d36594961e156e23315c8e8e51401fa50b", size = 395137 }
+sdist = { url = "https://files.pythonhosted.org/packages/ec/d7/6c09dd7ce4c7837e4cdb11dce980cb45ae3cd87677298dc3b781b6bce7d3/griffe-1.14.0.tar.gz", hash = "sha256:9d2a15c1eca966d68e00517de5d69dd1bc5c9f2335ef6c1775362ba5b8651a13", size = 424684 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/58/c6/5c20af38c2a57c15d87f7f38bee77d63c1d2a3689f74fefaf35915dd12b2/griffe-1.7.3-py3-none-any.whl", hash = "sha256:c6b3ee30c2f0f17f30bcdef5068d6ab7a2a4f1b8bf1a3e74b56fffd21e1c5f75", size = 129303 },
+    { url = "https://files.pythonhosted.org/packages/2a/b1/9ff6578d789a89812ff21e4e0f80ffae20a65d5dd84e7a17873fe3b365be/griffe-1.14.0-py3-none-any.whl", hash = "sha256:0e9d52832cccf0f7188cfe585ba962d2674b241c01916d780925df34873bceb0", size = 144439 },
 ]
 
 [[package]]
 name = "griffe-pydantic"
-version = "1.1.4"
+version = "1.1.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "griffe" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ad/88/f7b8558568eb11369383b4fdf91cf9f2ecf375e57193dd69673d553dc4d8/griffe_pydantic-1.1.4.tar.gz", hash = "sha256:3ce97cedb2c15b696e0c1c4bb901411f5b83b8e4d57b1fc0f2becde678ab4870", size = 42359 }
+sdist = { url = "https://files.pythonhosted.org/packages/08/d7/b5b74da7cd07bb7807609efc171508acf8a804bb190f190ff7d7dee710e4/griffe_pydantic-1.1.7.tar.gz", hash = "sha256:76328423a557f50391d77aaf27c82c86647e996e09ce1db3b098fadb8f312e40", size = 43148 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0b/a0/496e4f4f3af322171913b77f1789f479535abedf9f08359f1918219e03c8/griffe_pydantic-1.1.4-py3-none-any.whl", hash = "sha256:a4b9933579e14a8296cae90e71dace2742d91cb6792e5cd583047a6079f94e78", size = 12614 },
+    { url = "https://files.pythonhosted.org/packages/7a/bd/63e56c639e7a2f60955bbfd061a232a7c744f105f60b6ea4621d6d079beb/griffe_pydantic-1.1.7-py3-none-any.whl", hash = "sha256:516d6dbb6a6587bd0f70c2d23f1dc1b6e2e06eff7d9d37c2db9f0f60ea527af8", size = 12673 },
 ]
 
 [[package]]
@@ -690,7 +690,7 @@ dev = [
     { name = "time-machine", specifier = ">=2.16.0" },
 ]
 docs = [
-    { name = "griffe-pydantic", specifier = ">=1.1.0,<2" },
+    { name = "griffe-pydantic", specifier = "==1.1.7" },
     { name = "mkdocs-material", extras = ["imaging"], specifier = ">=9.6.4,<10" },
     { name = "mkdocs-panzoom-plugin", specifier = ">=0.1.3,<0.2" },
     { name = "mkdocstrings", extras = ["python"], specifier = ">=0.28.1,<1.0.0" },

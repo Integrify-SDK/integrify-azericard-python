@@ -1,5 +1,6 @@
 Azericard:
   - Ümumi məlumat: "integrations/azericard/about.md"
+  - Mühit dəyişənləri: "integrations/azericard/env.md"
   - API Referansı:
       - API Klient: "integrations/azericard/api-reference/client.md"
       - Schemas:

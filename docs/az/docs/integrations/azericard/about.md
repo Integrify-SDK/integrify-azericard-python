@@ -3,15 +3,6 @@
 ???+ danger
     Azericard inteqrasiyası tamamilə dokumentasiyaya uyğun yazılsa da, test mühiti olmadığından real testlər edilə bilinməyib. Ona görə istifadə edərkən, ehtiyatlı olun, göndərilən və alınan sorğuları bir daha yoxlamağınız tövsiyyə olunur. Əgər sizdə test mühiti varsa, və bizə yardımçı olmaq istəyirinizsə, əlaqə saxlamağınız xahiş olunur.
 
-???+ warning
-    Bu sorğulardan istifadə etmək üçün, bu dəyərləri "environment variable"-larına əlavə etməlisiniz: `AZERICARD_KEY_FILE_PATH`. Bu AzeriCard-dan alınmış açar faylıdır.
-
-???+ note
-    Bu sorğulardan rahat istifadə etmək üçün, qeyd olunan dəyərləri "environment variable"-larına əlavə etməyiniz məsləhət görülür: `AZERICARD_MERCHANT_ID` (Terminal ID), `AZERICARD_MERCHANT_NAME`, `AZERICARD_MERCHANT_URL`, `AZERICARD_CALLBACK_URL` (backref). Əks halda bu dəyərləri funksiyaları istifadə edərkən parametr kimi göndərməlisiniz.
-
-???+ note
-    AzeriCardClientClass interfeysinin dilini dəyişmək istəyirsinizsə, `AZERICARD_INTERFACE_LANG` "environment variable"-na dəyər verin, və ya hər sorğuda dil parametrini göndərin. Default olaraq, Azərbaycan dili olacaq.
-
 ## Rəsmi Dokumentasiya (v2024.11.6) { #official-documentation }
 
 [Azərbaycanca](https://developer.azericard.com/az)
