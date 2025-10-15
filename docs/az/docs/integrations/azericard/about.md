@@ -3,6 +3,9 @@
 ???+ danger
     Azericard inteqrasiyası tamamilə dokumentasiyaya uyğun yazılsa da, test mühiti olmadığından real testlər edilə bilinməyib. Ona görə istifadə edərkən, ehtiyatlı olun, göndərilən və alınan sorğuları bir daha yoxlamağınız tövsiyyə olunur. Əgər sizdə test mühiti varsa, və bizə yardımçı olmaq istəyirinizsə, əlaqə saxlamağınız xahiş olunur.
 
+???+ warning
+    Bu sorğulardan istifadə edə bilmək üçün, düzgün "environment variable"-ları quraşdırmalısınız. Daha ətraflı [burdan](./env.md) oxuya bilərsiniz.
+
 ## Rəsmi Dokumentasiya (v2024.11.6) { #official-documentation }
 
 [Azərbaycanca](https://developer.azericard.com/az)
