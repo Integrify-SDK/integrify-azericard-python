@@ -1,4 +1,4 @@
-# EPoint mühit dəyişənləri
+# Azericard mühit dəyişənləri
 
 ## Haqqında
 
