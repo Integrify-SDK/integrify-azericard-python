@@ -1,4 +1,4 @@
-# Azericard mühit dəyişənləri
+# Mühit dəyişənləri
 
 ## Haqqında
 
