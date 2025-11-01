@@ -1,4 +1,4 @@
-# AzeriCard klientinin API Reference-i
+# API Client
 
 ???+ note
 
